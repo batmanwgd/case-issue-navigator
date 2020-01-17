@@ -677,7 +677,7 @@ exports[`Storyshots SnoozeForm Basic re-snooze form 1`] = `
     name="snoozeReason"
     onChange={[Function]}
     required={true}
-    value="fo_referral"
+    value="3"
   >
     <option
       disabled={true}
@@ -687,22 +687,22 @@ exports[`Storyshots SnoozeForm Basic re-snooze form 1`] = `
       - Select Reason -
     </option>
     <option
-      value="technical_issue"
+      value="0"
     >
       Technical Issue
     </option>
     <option
-      value="test_data"
+      value="1"
     >
       Test Data - should be deleted
     </option>
     <option
-      value="record_analysis"
+      value="2"
     >
       Needs record analysis to review
     </option>
     <option
-      value="fo_referral"
+      value="3"
     >
       Stuck at field office - awaiting response
     </option>
@@ -776,7 +776,7 @@ exports[`Storyshots SnoozeForm Basic snooze form 1`] = `
     name="snoozeReason"
     onChange={[Function]}
     required={true}
-    value="technical_issue"
+    value="0"
   >
     <option
       disabled={true}
@@ -786,22 +786,22 @@ exports[`Storyshots SnoozeForm Basic snooze form 1`] = `
       - Select Reason -
     </option>
     <option
-      value="technical_issue"
+      value="0"
     >
       Technical Issue
     </option>
     <option
-      value="test_data"
+      value="1"
     >
       Test Data - should be deleted
     </option>
     <option
-      value="record_analysis"
+      value="2"
     >
       Needs record analysis to review
     </option>
     <option
-      value="fo_referral"
+      value="3"
     >
       Stuck at field office - awaiting response
     </option>
@@ -989,7 +989,7 @@ exports[`Storyshots UsaSelect Select 1`] = `
   name="name"
   onChange={[Function]}
   required={true}
-  value="X"
+  value="0"
 >
   <option
     disabled={true}
@@ -999,17 +999,17 @@ exports[`Storyshots UsaSelect Select 1`] = `
     placeholder
   </option>
   <option
-    value="X"
+    value="0"
   >
     x
   </option>
   <option
-    value="Y"
+    value="1"
   >
     y
   </option>
   <option
-    value="Z"
+    value="2"
   >
     z
   </option>

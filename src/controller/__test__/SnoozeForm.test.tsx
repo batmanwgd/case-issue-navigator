@@ -17,8 +17,8 @@ describe("SnoozeForm", () => {
         caseType="active"
       />
     );
-    SNOOZE_OPTIONS_SELECT.forEach(option => {
-      expect(wrapper.find(`option[value="${option.value}"]`).length).toBe(1);
+    SNOOZE_OPTIONS_SELECT.forEach((_, index) => {
+      expect(wrapper.find(`option[value="${index}"]`).length).toBe(1);
     });
   });
   it("should call the snooze callback on submit", () => {
@@ -58,7 +58,7 @@ describe("SnoozeForm", () => {
       />
     );
     wrapper.find("select").simulate("change", {
-      target: { value: SNOOZE_OPTIONS_SELECT[1].value }
+      target: { value: 0 }
     });
     expect(spy).toHaveBeenCalledTimes(1);
   });
@@ -74,9 +74,7 @@ describe("SnoozeForm", () => {
     );
     wrapper.find("select").simulate("change", {
       target: {
-        value: (SNOOZE_OPTIONS_SELECT.find(
-          option => option.followUp
-        ) as SnoozeOptionValue).value
+        value: 0
       }
     });
     wrapper.find("#followUp").simulate("change", {
@@ -98,7 +96,7 @@ describe("SnoozeForm", () => {
     );
     wrapper.find("select").simulate("change", {
       target: {
-        value: SNOOZE_OPTIONS_SELECT[1].value
+        value: 0
       }
     });
     wrapper.find("#showNoteField").simulate("click");
